@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -24,9 +28,694 @@
     </div>
     <!-- Конец -->
 
-    <div class="main">
-        В данном блоке размещается верстка
-    </div>
+    <section class="main">
+        
+        <header class="header">
+            <div class="container">
+                <img src="./img/header-logo.svg" alt="logo" class="logo">
+                <nav class="navbar">
+                    <a href="#" class="link">услуги</a>
+                    <a href="#" class="link">о нас</a>
+                    <a href="#" class="link">польза продукта</a>
+                    <a href="#" class="link">оборудование</a>
+                    <a href="#" class="link">этапы работы</a>
+                    <a href="#" class="link">отзывы</a>
+                </nav>
+                <div class="button-bckg">
+                    <button class="button">связаться</button>
+                </div>
+            </div>
+        </header>
 
+        <section class="intro">
+            <div class="container">
+                <h1 class="title">
+                    Чистый Воздух
+                    <br><img src="./img/intro-line.svg" alt="img" id="line"> вместе с 
+                    <br><span id="green-text">
+                        Pascal vent
+                    </span>
+                </h1>
+                <div class="works">
+                    <img src="./img/dots.svg" alt="img" class="dots">
+                    <p class="text">
+                        Проектирование, поставка и монтаж систем вентиляции и кондиционирования
+                    </p>
+                </div>
+                <div class="contacts">
+                    <div class="location">
+                        <img src="./img/location-mark.svg" alt="icon" class="location-mark">
+                        <p class="address">Московский регион,<br>Москва</p>
+                    </div>
+                    <div class="phones">
+                        <img src="./img/phone-icon.png" alt="icon" class="phone-icon">
+                        <p class="phone-nunmbers">
+                            + 7 492 373 63 31<br>+ 7 424 367 89 29
+                        </p>
+                    </div>
+                </div>
+                <button class="button">
+                    оставить заявку
+                    <div class="button-bckg"></div>
+                </button>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="description">
+                    <h1 class="title">
+                        Предоставляемые
+                        <br>Услуги <img src="./img/services-line.svg" alt="img" id="line"> 
+                    </h1>
+                    <p class="paragraph">
+                        При разработке проекта предложим техническое решение оптимальное по соотношению цены и качества, оно идеально впишется в ваш дизайн, а также будет учитывать все ваши пожелания.
+                    </p>
+                    <p class="paragraph">
+                        <br>Монтаж выполняется опытными бригадами с соблюдением всех действующих технических норм, правил безопасности и строго по согласованному проекту.
+                    </p>
+                    <p class="paragraph">
+                        <br>Одинаково эффективно выполняем проектирование и монтаж на объектах любой сложности – от небольшой квартиры, до объектов со сложными технологическими процессами на основе действующей нормативной документации.
+                    </p>
+                    </p>
+                </div>
+                <div class="tabs-wrapper">
+                    <div class="tabs">
+                        <div class="tab tab-cond">
+                            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                            <label for="tab-2" class="tab-label" id="tab-label-2">
+                                <div class="icon" id="cond-icon"></div>
+                                <span>Кондиционирование</span>
+                            </label>
+                            <div class="tab-content" id="tab-content2">
+                                <div class="items">
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-cond1.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Проектирование систем кондиционирования
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-cond2.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж сплит-систем
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-cond3.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж мульти сплит-систем
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-cond4.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж VRV и VRF систем
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-cond5.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж фанкойлов
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-cond6.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж настенных, канальных и кассетных кондиционеров
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab tab-vent">
+                            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                            <label for="tab-1" class="tab-label" id="tab-label-1">
+                                <div class="icon" id="vent-icon"></div>
+                                <span>Система Вентиляции</span>
+                            </label>
+                            <div class="tab-content" id="tab-content1">
+                                <div class="items">
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-vent1.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Проектирование систем вентиляции любой сложности
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-vent2.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж приточной вентиляции
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-vent3.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж вытяжной вентиляции
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-vent4.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж вентиляции с увлажнением воздуха
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-vent5.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж вентиляции с рекуператором
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./img/tabs-icon-vent6.svg" alt="icon" class="icon">
+                                        <p class="text">
+                                            Монтаж вентиляции с осушением для бассейна
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices">
+            <div class="container">
+                <h1 class="title">
+                    Комплексное решение по монтажу
+                    <br>и вентиляции под ключ <img src="./img/services-line.svg" alt="img" id="line"> 
+                </h1>
+                <div class="cards">
+                    <div class="card">
+                        <p class="price">от 100 000 ₽</p>
+                        <img src="./img/card-photo1.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Квартиры и офисы</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="price">от 100 000 ₽</p>
+                        <img src="./img/card-photo2.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Магазины и ТЦ</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="price">от 150 000 ₽</p>
+                        <img src="./img/card-photo3.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Фитнес центры</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="price">от 150 000 ₽</p>
+                        <img src="./img/card-photo4.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Бассейны</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="price">от 200 000 ₽</p>
+                        <img src="./img/card-photo5.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Загородные дома, коттеджи, таунхаусы</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="price">от 200 000 ₽</p>
+                        <img src="./img/card-photo6.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Рестораны, кафе, бары</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="price">от 200 000 ₽</p>
+                        <img src="./img/card-photo7.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Стоматологии, клиники</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="price">от 100 000 ₽</p>
+                        <img src="./img/card-photo8.png" alt="photo" class="photo">
+                        <div class="info">
+                            <p class="name">Салоны красоты, СПА</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stages">
+            <img src="./img/stages-bckg-image.svg" alt="img" class="stages-bckg-image">
+            <div class="container">
+                <div class="block-top">
+                    <h1 class="title">
+                        3 простых шага<img src="./img/services-line.svg" alt="img" id="line">
+                        <br>к очищению воздуха 
+                    </h1>
+                    <div class="info">
+                        <p class="heading">Кажется, это знак...</p>
+                        <div class="items">
+                            <div class="item">
+                                <img src="./img/stages-item-icon.svg" alt="icon" class="icon">
+                                <p class="text">
+                                    Получите скидку 5% на монтаж при заполнении анкеты на сайте
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/stages-item-icon.svg" alt="icon" class="icon">
+                                <p class="text">
+                                    Бесплатно сделаем проект и пусконаладку системы при заказе монтажа
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/stages-item-icon.svg" alt="icon" class="icon">
+                                <p class="text">
+                                    Кэшбек до 10% дизайнерам при передаче Клиента и заказе у нас проекта с монтажом!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps">
+                    <div class="step step-1">
+                        <img src="./img/stages-step-icon1.svg" alt="icon" class="icon">
+                        <p class="name">Ваше желание</p>
+                    </div>
+                    <div class="step step-2">
+                        <img src="./img/stages-step-icon2.svg" alt="icon" class="icon">
+                        <p class="name">Заявка</p>
+                    </div>
+                    <div class="step step-3">
+                        <img src="./img/stages-step-icon3.svg" alt="icon" class="icon">
+                        <p class="name">Реализация</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <h1 class="title">Оставьте заявку и мы с вами свяжемся</h1>
+                <form id="form" name="contactForm" onsubmit="return validateForm()">
+                    <div class="input-forms">
+                        <div class="input-form">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <div class="error" id="nameErr"></div>
+                        </div>
+                        <div class="input-form">
+                            <input type="text" name="mobile" placeholder="Номер телефона" maxlength="18" required>
+                            <div class="error" id="mobileErr"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button" >
+                        отправить
+                        <div class="button-bckg"></div>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <div class="double-block">
+            <img src="./img/about-request-bckg-image.png" alt="img" class="about-request-bckg-image">
+
+            <section class="about">
+                <div class="container">
+                    <div class="description">
+                        <div class="wrapper">
+                            <h1 class="title">
+                                о нас <img src="./img/about-logo.svg" alt="logo" id="logo">
+                                <br>Особенности
+                            </h1>
+                            <p class="paragraph">
+                                Мы любим то, чем занимаемся – поэтому у нас индивидуальный подход к каждому человеку, креативные решения для проекта любой сложности и высокий уровень клиентского сервиса.
+                            </p>
+                            <p class="paragraph">
+                                <br>Именно поэтому нам доверяют сложнейшие задачи, рекомендуют нас и возвращаются вновь. Доверьте нам воплощение ваших самых изысканных и технологичных задач, и мы сделаем всё с высочайшим уровнем сервиса <span>Pascal Vent</span>.
+                            </p>
+                            <p class="paragraph">
+                                <br><span>Pascal Vent</span> гарантирует сертифицированные современные системы, оборудование, качественные материалы и самые оптимальные решения под любой бюджет.
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="items">
+                            <div class="item">
+                                <p class="heading"><span>10</span> лет на рынке</p>
+                                <p class="text">Работаем<br>как единое целое</p>
+                            </div>
+                            <div class="item">
+                                <p class="heading"><span>+ 11</span> лет стажа</p>
+                                <p class="text">Опытные и обученые специалисты своего дела</p>
+                            </div>
+                            <div class="item">
+                                <p class="heading"><span>+ 180</span> клиентов</p>
+                                <p class="text">Число счастливых<br>клиентов за этот период</p>
+                            </div>
+                            <div class="item">
+                                <p class="heading"><span>+ 470</span> проектов</p>
+                                <p class="text">Большое количество реализованных проектов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="request">
+                <div class="container">
+                    <div class="description">
+                        <h1 class="title">
+                            комфорт и Уют 
+                            <br>в любое время года
+                        </h1>
+                        <div class="icons-group">
+                            <img src="./img/icons-group_icon1.svg" alt="icon" class="icon">
+                            <img src="./img/icons-group_icon2.svg" alt="icon" class="icon">
+                            <img src="./img/icons-group_icon3.svg" alt="icon" class="icon">
+                            <img src="./img/icons-group_icon4.svg" alt="icon" class="icon">
+                            <img src="./img/icons-group_icon5.svg" alt="icon" class="icon">
+                            <img src="./img/icons-group_icon6.svg" alt="icon" class="icon">
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <img src="./img/request-item-icon.svg" alt="icon" class="icon">
+                                <p class="text">
+                                    Создание комфортных условий для работы и отдыха
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/request-item-icon.svg" alt="icon" class="icon">
+                                <p class="text">
+                                    Чистый, свежий, приточный воздух круглый год
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/request-item-icon.svg" alt="icon" class="icon">
+                                <p class="text">
+                                    Удаление не приятных запахов, избыточной влажности и накопившегося углекислого газа из помещений
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/request-item-icon.svg" alt="icon" class="icon">
+                                <p class="text">
+                                    Поддержание комфортной температуры и влажности воздуха зимой и летом
+                                </p>
+                            </div>
+                        </div>
+                        <div class="important-text">
+                            <span>Pascsl Vent</span> поможет улучшить ваше самочувствие и повысить работоспособность днем, а ночью подарит здоровый и крепкий сон. Это важно для тех, кто следит за своим здоровьем и здоровьем своих близких.
+                        </div>
+                        <button class="button">
+                            заполнить заявку
+                            <div class="button-bckg"></div>
+                        </button>
+                    </div>
+                    <div class="photos">
+                        <div class="photo-block1">
+                            <img src="./img/request-photo1.png" alt="photo" class="photo1">
+                            <img src="./img/request-photo2.png" alt="photo" class="photo2">
+                        </div>
+                        <div class="photo-block2">
+                            <img src="./img/request-photo3.png" alt="photo" class="photo3">
+                            <img src="./img/request-photo4.png" alt="photo" class="photo4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="workflow">
+            <img src="./img/workflow-bckg.png" alt="img" class="workflow-bckg-image">
+            <h1 class="title">
+                Понятная и эффективная схема работы
+            </h1>
+            <div class="items">
+                <div class="item1">
+                    <p class="heading">Получение заявки</p>
+                    <p class="text">
+                        Заполните форму, укажите свои данные и отправьте нашим менеджерам в обработку
+                    </p>
+                </div>
+                <div class="item2">
+                    <p class="heading">Консультация</p>
+                    <p class="text">
+                        После обработки Вашей заявки, мы связываемся с Вами, выявляем потребности и пожелания, а также проводим техническую консультацию
+                    </p>
+                </div>
+                <div class="item3">
+                    <p class="heading">Выезд на объект</p>
+                    <p class="text">
+                        В назначенное время мы выезжаем на объект и согласовываем основные технические решения, обсуждаем техническое задание
+                    </p>
+                </div>
+                <div class="item4">
+                    <p class="heading">Составляем График</p>
+                    <p class="text">
+                        На этом этапе мы составляем коммерческое предложение и занимаемся согласованием графика работ (проектирования, закупки оборудования и монтажа).
+                    </p>
+                </div>
+                <div class="item5">
+                    <p class="heading">договор</p>
+                    <p class="text">
+                        Мы заключаем с Вами договор и начинаем проектирование и согласование проекта
+                    </p>
+                </div>
+                <div class="item6">
+                    <p class="heading">Поставка и монтаж</p>
+                    <p class="text">
+                        На этом этапе, происходит поставка всех материалов и начинается выполнение монтажных работ
+                    </p>
+                </div>
+                <div class="item7">
+                    <p class="heading">Подписание акта выполненных работ</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <img src="./img/protfolio-bckg-image.png" alt="img" class="portfolio-bckg-image">
+            <div class="title-block">
+                <h1 class="title">
+                    Портфолио И<br>Процесс работы
+                </h1>
+                <p class="text">
+                    Технические решения, принятые в рабочих чертежах, соответствуют требованиям экологических, санитарно-гигиенических, противопожарных и других норм и правил, и обеспечивают безопасную для жизни людей эксплуатацию объекта при соблюдении предусмотренных рабочими чертежами мероприятий.
+                </p>
+            </div>
+            <div class="gallery">
+                <div class="icons">
+                    <div class="icon-prev"></div>
+                    <div class="icon-next"></div>
+                </div>
+                <div class="slider">
+                    <div class="slider-row">
+                        <label class="preview preview1">
+                            <a href="#">
+                                <img src="./img/slider-preview-logo.svg" alt="logo" class="slider-preview-logo">
+                            </a>
+                            <h3>приточная вентиляция</h3>
+                            <input name="preview" type="radio" value="preview1" checked>
+                            <div class="comments">
+                                <p>Монтаж приточной вентиляции (объект в Прайм Парк)</p>    
+                            </div>
+                        </label>
+                        <label class="preview preview2">
+                            <a href="#">
+                                <img src="./img/slider-preview-logo.svg" alt="logo" class="slider-preview-logo">
+                                </a>
+                            <h3>приточная вентиляция</h3>
+                            <input name="preview" type="radio" value="preview2">
+                            <div class="comments">
+                                <p>Монтаж приточной вентиляции (объект в Прайм Парк)</p>
+                            </div>
+                        </label>            
+                        <label class="preview preview3">
+                            <a href="#">
+                                <img src="./img/slider-preview-logo.svg" alt="logo" class="slider-preview-logo">
+                                </a>
+                            <h3>Канальные кондиционеры</h3>
+                            <input name="preview" type="radio" value="preview3">
+                            <div class="comments">
+                                <p>Монтаж канального кондиционера</p>
+                            </div>
+                        </label>
+                        <label class="preview preview4">
+                            <a href="#">
+                                <img src="./img/slider-preview-logo.svg" alt="logo" class="slider-preview-logo">
+                                </a>
+                            <h3>Канальные кондиционеры</h3>
+                            <input name="preview" type="radio" value="preview4">
+                            <div class="comments">
+                                <p>Монтаж канального кондиционера</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="container">
+                <div class="info">
+                    <h1 class="title">
+                        Известные клиенты<img src="./img/services-line.svg" alt="img" id="line">
+                        <br>которые нам доверились 
+                    </h1>
+                    <p class="text">
+                        Реализованы проекты квартир и коммерческих помещений в жилых комплексах от крупных застройщиков таких как: Level, ФСК, MR групп, ПИК, Самолет, Гранель, Донстрой, Пионер, Эталон, А101, Sminex, Vesper, Инград, КРОСТ, МИЦ. Мы ценим каждого клиента Pascal Vent и с радостью готовы расширять нашу клиентскую базу.
+                    </p>
+                </div>
+                <div class="slider">
+                    <div class="slider-row">
+                        <label class="client client1">
+                            <input name="client" type="radio" value="client1">
+                            <img src="./img/client-logo-1.svg" alt="" class="logo">
+                        </label>
+                        <label class="client client2">
+                            <input name="client" type="radio" value="client2">
+                            <img src="./img/client-logo-2.svg" alt="" class="logo">
+                        </label>            
+                        <label class="client client3">
+                            <input name="client" type="radio" value="client3">
+                            <img src="./img/client-logo-3_1.png" alt="" class="logo">
+                        </label>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-prev"></div>
+                        <div class="icon-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="info">
+                    <img src="./img/footer-logo.svg" alt="logo" class="logo">
+                    <p class="text">
+                        Компания <span>"Pascal Vent"</span> входит в число лучших специализированных организаций, с широким ассортиментом товаров и услуг, предназначенных для систем вентиляции и кондиционирования, предоставляющих высокий сервис и удобство обслуживания нашим клиентам.
+                    </p>
+                    <img src="./img/footer-line.svg" alt="img" class="line">
+                    <p class="add-phrase">
+                        Чистый воздух вместе с <span>Pascal Vent</span>
+                    </p>
+                </div>
+                <div class="contacts">
+                    <div class="heading">Контакты</div>
+                    <div class="phones">
+                        <div class="contact phone">
+                            <img src="./img/footer-phone-icon.png" alt="icon" class="phone-icon">
+                            <p class="phone-humber phone-humber1">+ 7 492 373 63 31</p>
+                        </div>
+                        <img src="./img/footer-divider-line.svg" alt="img" class="divider-line">
+                        <div class="contact phone">
+                            <img src="./img/footer-phone-icon.png" alt="icon" class="phone-icon">
+                            <p class="phone-humber phone-humber2">+ 7 424 367 89 29</p>
+                        </div>
+                        <img src="./img/footer-divider-line.svg" alt="img" class="divider-line">
+                        <div class="contact email">
+                            <img src="./img/footer-envelope-icon.svg" alt="icon" class="envelope-icon">
+                            <p class="email">PascalVent@mail.ru</p>
+                        </div>
+                        <img src="./img/footer-divider-line.svg" alt="img" class="divider-line">
+                    </div>
+                    <div class="location">
+                        <div class="schedule">
+                            <img src="./img/footer-calendar-icon.svg" alt="icon" class="calendar-icon">
+                            <p class="business-hours">
+                                Пн - Сб: 9:00 - 19:00<br>Вс: выходной
+                            </p>
+                        </div>
+                        <div class="address">
+                            <img src="./img/footer-location-mark.svg" alt="icon" class="location-mark">
+                            <p class="postal">
+                                Московский регион, Москва<br>ул. Плеханова, 28А
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="apply">
+                    <p class="heading">Заполнить заявку</p>
+                    <fieldset>
+                        <input type="text" class="input name" placeholder="Ваше Имя">
+                        <input type="phone" class="input phone" placeholder="Номер телефона">
+                    </fieldset>
+                    <button class="button">
+                        отправить
+                        <div class="button-bckg"></div>
+                    </button>
+                </div>
+            </div>
+        </footer>
+
+        <section class="popup">
+            <div class="popup__container">
+                <button class="popup__close-button">
+                    <img src="./img/popup__close-icon.svg" alt="icon">
+                    <div class="popup__close-button-bckg"></div>
+                </button>
+                <h2 class="popup__title">
+                    Быстрая связь
+                    <br>с нами <img src="./img/popup-title-line.svg" alt="img" id="line"> 
+                </h2>
+                <div class="info">
+                    <div class="info__container">
+                        <p class="info__text">
+                            Вы можете набрать нам, и менеджеры Pascal Vent с радостью проконсультирует Вас по любому вопросу и помогут определиться с выбором.
+                        </p>
+                        <p class="info__heading">
+                            График приема звонков:
+                        </p>
+                        <div class="info__schedule">
+                            <img src="./img/popup-clock-icon.svg" alt="" class="info__schedule-clock">
+                            <p class="info__business-hours">ПН-СБ с 9:00 до 19:00</p>
+                        </div>
+                        <div class="info__phones">
+                            <div class="info__phone">
+                                <img src="./img/popup-phone-icon.png" alt="" class="info__phone-icon">
+                                <p class="info__phone-number">+ 7 492 373 63 31</p>
+                            </div>
+                            <img src="./img/popup-divider-line.svg" alt="icon" class="info__divider-line">
+                            <div class="info__phone">
+                                <img src="./img/popup-phone-icon.png" alt="" class="info__phone-icon">
+                                <p class="info__phone-number">+ 7 424 367 89 29</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popup-apply">
+            <div class="popup-apply__container">
+                <button class="popup-apply__close-button">
+                    <img src="./img/popup__close-icon.svg" alt="icon">
+                    <div class="popup-apply__close-button-bckg"></div>
+                </button>
+                <h2 class="popup-apply__title">
+                    мы свяжемся
+                    <br>с вами <img src="./img/popup-apply-title-line.svg" alt="img" id="line"> 
+                </h2>
+                <div class="info">
+                    <div class="info__container">
+                        <fieldset>
+                            <input type="text" class="input name" placeholder="Ваше Имя">
+                            <input type="phone" class="input phone" placeholder="Номер телефона">
+                        </fieldset>
+                        <button class="button">
+                            отправить
+                            <div class="button-bckg"></div>
+                        </button>
+                    </div>
+                </div>
+                <img src="./img/logo.svg" alt="logo" class="info__logo">
+            </div>
+        </section>
+
+    </div>
 </body>
+<script src="js/script.js"></script>
 </html>

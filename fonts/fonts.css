@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Ruberoid';
+    src: local('Ruberoid Light'), local('Ruberoid-Light'),
+        url('Ruberoid-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ruberoid';
+    src: local('Ruberoid Medium'), local('Ruberoid-Medium'),
+        url('Ruberoid-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ruberoid Semi';
+    src: local('Ruberoid Semi Bold'), local('Ruberoid-SemiBold'),
+        url('Ruberoid-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ruberoid';
+    src: local('Ruberoid Bold'), local('Ruberoid-Bold'),
+        url('Ruberoid-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('ProximaNova-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+        url('ProximaNova-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+        url('ProximaNova-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}

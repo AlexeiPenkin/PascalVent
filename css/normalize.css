@@ -35,8 +35,8 @@ textarea {
 
 button {
   cursor: pointer;
-  color: inherit;
-  background-color: inherit;
+  /* color: inherit; */
+  /* background-color: inherit; */
 }
 
 a {
@@ -45,7 +45,7 @@ a {
 
 a:link,
 a:visited {
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 a:hover {
