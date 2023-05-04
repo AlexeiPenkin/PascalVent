@@ -7,7 +7,7 @@ let lastScrollTop = 0;
 
 window.addEventListener('scroll', () => {
 	let scrollDistance = window.scrollY;
-    // скролл вниз
+    //скролл вниз
 	if (scrollDistance >= introHeight + headerHeight) {
 		header.classList.add('header_fixed');
 		intro.style.marginTop = `${headerHeight}px`;
@@ -34,11 +34,10 @@ window.addEventListener('scroll', () => {
 });
 
 
-// МОДАЛЬНОЕ ОКНО "Связаться" (Contact) //
+// МОДАЛЬНОЕ ОКНО - "Связаться" (открываем через кнопку в header) //
 const popupContact = document.querySelector(".popup");
 const navContactButton = document.querySelector("header button");
-const popupContactCloseButton = document.querySelector(".popup .popup__close-button");
-
+const popupContactCloseButton = document.querySelector("#popup__close-button");
 // Функция открытия модального окна
 function openPopupContact(popupContact) {
     popupContact.classList.add("popup_opened");
@@ -49,26 +48,75 @@ function closePopupContact(popupContact) {
 }
 // кнопка, по которой открывается popup
 navContactButton.addEventListener("click", () => {
-  openContactForm();
+    openContactForm();
 });
-
 // открытие формы Contact
 function openContactForm() {
-  openPopupContact(popupContact);
+    openPopupContact(popupContact);
 }
-
 // закрытие формы Contact по кнопке закрытия
 popupContactCloseButton.addEventListener("click", () =>
-  closePopupContact(popupContact)
+    closePopupContact(popupContact)
 );
 
 
-// МОДАЛЬНОЕ ОКНО "Оставить/Заполнить заявку" (Apply) //
+// МОДАЛЬНОЕ ОКНО - Burger-menu //
+const popupBurgerMenu = document.querySelector(".popup-burger-menu");
+const openBurgerMenuButton = document.querySelector("#hamb");
+const closeBurgerMenuButton = document.querySelector("#burger-menu__close-btn");
+// Функция открытия модального окна
+function openBurgerMenu(popupBurgerMenu) {
+    popupBurgerMenu.classList.add("popup_opened");
+}
+// Функция закрытия модального окна
+function closeBurgerMenu(popupBurgerMenu) {
+    popupBurgerMenu.classList.remove("popup_opened");
+}
+// кнопки, по которым открывается popup
+openBurgerMenuButton.addEventListener("click", () => {
+    openBurgerMenuForm();
+});
+// открытие формы Burger-menu
+function openBurgerMenuForm() {
+    openBurgerMenu(popupBurgerMenu);
+}
+// закрытие формы Burger-menu по кнопке закрытия
+closeBurgerMenuButton.addEventListener("click", () =>
+    closeBurgerMenu(popupBurgerMenu)
+);
+
+// МОДАЛЬНОЕ ОКНО - "Связаться" (открываем через кнопку в burger-menu) //
+const popupContactMob = document.querySelector(".popup");
+const navContactMobButton = document.querySelector("#burger-menu-contact-btn");
+const popupContactMobCloseButton = document.querySelector("#popup__close-button");
+// Функция открытия модального окна
+function openPopupContactMob(popupContactMob) {
+    popupContactMob.classList.add("popup_opened");
+}
+// Функция закрытия модального окна
+function closePopupContactMob(popupContactMob) {
+    popupContactMob.classList.remove("popup_opened");
+}
+// кнопка, по которой открывается popup
+navContactMobButton.addEventListener("click", () => {
+    openContactForm();
+    closeBurgerMenu(popupBurgerMenu);
+});
+// открытие формы Contact
+function openContactForm() {
+    openPopupContactMob(popupContactMob);
+}
+// закрытие формы Contact по кнопке закрытия
+popupContactMobCloseButton.addEventListener("click", () =>
+    closePopupContactMob(popupContactMob)
+);
+
+
+// МОДАЛЬНОЕ ОКНО - "Оставить/Заполнить заявку" (Apply) //
 const popupApply = document.querySelector(".popup-apply");
 const navApplyButton1 = document.querySelector(".intro button");
 const navApplyButton2 = document.querySelector(".request button");
 const popupApplyCloseButton = document.querySelector(".popup-apply .popup-apply__close-button");
-
 // Функция открытия модального окна
 function openPopupApply(popupApply) {
     popupApply.classList.add("popup_opened");
@@ -81,19 +129,16 @@ function closePopupApply(popupApply) {
 navApplyButton1.addEventListener("click", () => {
   openApplyForm();
 });
-
 navApplyButton2.addEventListener("click", () => {
     openApplyForm();
   });
-
 // открытие формы Apply
 function openApplyForm() {
-  openPopupApply(popupApply);
+    openPopupApply(popupApply);
 }
-
 // закрытие формы Apply по кнопке закрытия
 popupApplyCloseButton.addEventListener("click", () =>
-  closePopupApply(popupApply)
+    closePopupApply(popupApply)
 );
 
 
@@ -122,11 +167,9 @@ function validateForm() {
         var regex = /^[А-Яа-яЁё\s]+$/;                
         if(regex.test(name) === false) {
             printError("nameErr", "Пожалуйста, введите имя в правильном формате");
-
         } else {
             printError("nameErr", "");
             nameErr = false;
-
         }
     }
         
@@ -150,3 +193,36 @@ function validateForm() {
         document.getElementById('form').reset();
     }
 };
+
+
+// SLIDER - Portfolio Mobile //
+const slidesContainer = document.getElementById("slider-row");
+const slide = document.querySelector(".preview");
+const prevButton = document.getElementById("icon-prev");
+const nextButton = document.getElementById("icon-next");
+
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
+});
+
+// SLIDER - Clients Desktop + Mobile//
+const slidesContainerClients = document.getElementById("slider-row-clients");
+const slideClients = document.querySelector(".client");
+const prevButtonClients = document.getElementById("icon-prev-clients");
+const nextButtonClients = document.getElementById("icon-next-clients");
+
+nextButtonClients.addEventListener("click", () => {
+  const slideWidth = slideClients.clientWidth;
+  slidesContainerClients.scrollLeft += slideWidth;
+});
+
+prevButtonClients.addEventListener("click", () => {
+  const slideWidth = slideClients.clientWidth;
+  slidesContainerClients.scrollLeft -= slideWidth;
+});
